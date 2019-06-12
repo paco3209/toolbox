@@ -56,4 +56,10 @@ String videoUrl = "https://download.blender.org/peach/bigbuckbunny_movies/BigBuc
 
 
     }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        exoPlayer.stop();
+    }
 }
